@@ -31,6 +31,9 @@
     "ignorePatterns": [
       "dist/",
       "build/",
-      "**/*.js", "**/*.jsx"
+      "BookList.js",
+      "BookItem.js",
+      "BookForm.js",
+      "BooksPage.js"
     ]
   }
