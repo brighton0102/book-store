@@ -1,31 +1,20 @@
-import React, { useState } from 'react';
-import BookList from './BookList';
-import BookForm from './BookForm';
-import Navigation from './Navigation';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import BookItem from './BookItem';
+import AddBookForm from './AddBookForm';
 
 function BooksPage() {
-  const [books, setBooks] = useState([]);
-
-  const handleAddBook = (newBook) => {
-    setBooks([...books, newBook]);
-  };
-
-  const handleDeleteBook = (bookId) => {
-    const updatedBooks = books.filter((book) => book.id !== bookId);
-    setBooks(updatedBooks);
-  };
+  const books = useSelector(state => state.books);
 
   return (
     <div>
-      <Navigation />
-      {' '}
-      {/* Display navigation links */}
-      <BookList books={books} onDeleteBook={handleDeleteBook} />
-      {' '}
-      {/* Display book list */}
-      <BookForm onAddBook={handleAddBook} />
-      {' '}
-      {/* Display book form */}
+      {books.map(book => (
+        <div key={book.item_id}>
+          <BookItem book={book} />
+        </div>
+      ))}
+
+      <AddBookForm />
     </div>
   );
 }
