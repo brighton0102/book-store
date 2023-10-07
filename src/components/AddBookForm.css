@@ -8,6 +8,12 @@
   width: 15.28%;
 }
 
+.form-fields {
+  border-top: 1px solid #e8e8e8;
+  margin-left: 4.3rem;
+  margin-right: 4.3rem;
+}
+
 .add-book-form {
   text-align: center;
   padding-top: 1rem;
@@ -16,8 +22,8 @@
   margin-bottom: 8rem;
 }
 
-.add-book-form h2 {
-  font-size: 1.25rem;
+.add-book {
+  font-size: 2rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -26,14 +32,12 @@
   color: #888;
   margin-bottom: 20px;
   display: flex;
-  padding-left: 7rem;
 }
 
 .form-input-fields {
-  gap: 10px;
+  gap: 105px;
   align-items: center;
   display: flex;
-  padding-left: 6.3rem;
 }
 
 .form-input-fields input {

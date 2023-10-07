@@ -26,8 +26,8 @@ function AddBookForm() {
   };
 
   return (
-    <div className='form-input-fields'>
-      <h2>Add New Book</h2>
+    <div className='form-fields'>
+        <h2 className='add-book'>Add New Book</h2>
       <div className='form-input-fields'>
       <input
         type="text"
