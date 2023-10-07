@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// eslint-disable-next-line import/no-named-as-default
 import BooksPage from './components/BooksPage';
 import CategoriesPage from './components/CategoriesPage';
 import './App.css';

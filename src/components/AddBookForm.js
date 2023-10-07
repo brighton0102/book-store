@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBookAsync } from '../redux/books/booksSlice'
+import './AddBookForm.css';
 
 function AddBookForm() {
   const dispatch = useDispatch();
@@ -25,8 +26,9 @@ function AddBookForm() {
   };
 
   return (
-    <div>
+    <div className='form-input-fields'>
       <h2>Add New Book</h2>
+      <div className='form-input-fields'>
       <input
         type="text"
         placeholder="Title"
@@ -39,7 +41,8 @@ function AddBookForm() {
         value={author}
         onChange={(e) => setAuthor(e.target.value)}
       />
-      <button onClick={handleAddBook}>Add Book</button>
+        <button className='add-button' onClick={handleAddBook}>Add Book</button>
+        </div>
     </div>
   );
 }
