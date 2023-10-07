@@ -1,0 +1,50 @@
+
+.add-button {
+  height: 2.813rem;
+  border-radius: 3px;
+  border-color: #888;
+  color: #fff;
+  background-color: #2e90f0;
+  width: 15.28%;
+}
+
+.form-fields {
+  border-top: 1px solid #e8e8e8;
+  margin-left: 4.3rem;
+  margin-right: 4.3rem;
+}
+
+.add-book-form {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e8e8e8;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.add-book {
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.form-input-fields {
+  gap: 105px;
+  align-items: center;
+  display: flex;
+}
+
+.form-input-fields input {
+  height: 2.813rem;
+  border-radius: 4px;
+  border: solid 1px var(--white);
+  background-color: #fff;
+  padding-left: 1rem;
+  width: 32.7vw;
+}
